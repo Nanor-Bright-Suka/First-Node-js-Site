@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h2>Welcome To The Form Page</h2>
+    <hr>
+
+    <form method="POST" action="/newRoute">
+        <!-- Input for the author's name -->
+    <div>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" placeholder="Your name" required>
+      </div>
+
+      <hr>
+      <!-- Input for the message text -->
+      <div>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" placeholder="Your message" required>
+      </div>
+      
+      <hr>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
